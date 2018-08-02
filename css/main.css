@@ -1,0 +1,202 @@
+/* 
+    Default Color 
+        1. #ff867a pink 
+        2. #6858db purple 
+        3. #22233b heading  / 48px 
+        4. #56576e text     / 16px 
+        5. #f6f6f9 light grey 
+
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1) / 0 0 30px -5px #c9c9c9
+        icon 70px, 70px, rotate(45deg), 6 radius
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1)
+        
+*/
+/* General  */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+}
+p{
+    color: #56576e;
+    line-height: 1.5;
+}
+.page-title {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #6858db;
+    font-weight: bold;
+}
+header{
+    width: 100vw;
+    height: 80vh;
+    background-image: url(../images/header-bg-1.jpg);
+    background-size: cover;
+    background-position: 0% 66%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} 
+.logo {
+    position: relative;
+    top: 10px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    margin-right: 8px;
+}
+nav ul li a{
+    text-decoration-line: none;
+    text-transform: capitalize;
+    transition: 10ms color initial;
+    color: #6858db;
+    display:inline;
+    padding: 2px;
+}
+nav ul li a:hover {
+    color: #ff867a;
+    border-bottom: 1px solid #ff867a;
+ }
+.main-content {
+    margin-top: 100px;
+}
+.main-content h1 {
+    color: #6858db;
+    font-size: 1.5rem;
+}
+.main-content h1:first-letter {
+
+    font-size: 2rem;
+}
+.main-content p {
+    font-size: 1rem;
+    color: #56576e;
+    text-align: center;
+    letter-spacing: 0.01rem;
+    line-height: 1.6rem;
+}
+#download-area .container .row .col-6 img{
+    width:100%; height:100%;
+}
+#service-area {
+    text-align: center;
+}
+.service-box{
+    padding: 50px 0px;
+    transition: all 300ms ease-in-out;
+    box-shadow: none;
+}
+.service-box:hover{
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    transform: scale(1.2);
+    transition: color ease-in-out 200ms;
+    background-color: papayawhip;
+}
+
+ figure{
+    margin: 0%;
+}
+ figure img{
+    width: 200px; height: 200px;
+}
+
+.single-team .team-content{text-align: center}
+
+#blog .title{color: #6858db;}
+
+.single-faq{text-align: center;
+    padding: 5px 0px;
+    transition: all 300ms ease-in-out;
+    box-shadow: none;
+}
+.single-faq:hover{
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    transform: scale(1.2);
+    transition: color ease-in-out 200ms;
+    background-color: papayawhip;
+}
+/*test*/ 
+.contact{
+    background-color: #fbfafa;
+    color: #6858db;
+}
+.contact p{
+    color:#6A6E71;
+    text-align: left;
+}
+.contact strong{color: #D1D6DA;}
+.contact .form input{
+    background-color: white;
+    color:#6A6E71;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+}
+.contact .form label{
+    display: block;
+    color: #6858db;
+    margin: 10px 0;
+}
+.contact .form textarea{
+    background-color: white;
+    color: #6A6E71;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    height: 300px;
+}
+.footer{
+    background-color: #6858db;
+    color: white;
+    padding: 20PX 0;
+    text-align: center;
+    overflow: hidden;
+}
+.footer span{float: left;}
+.footer ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0;
+    float: right;
+}
+.footer ul li{
+ display: inline-block; 
+}
+.footer i{
+   border-radius: 50% ;
+    color:white;
+}
+.footer i:hover{
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    transform: scale(1.2);
+    transition: color ease-in-out 500s;
+    padding-top: 0;
+    transform: translate(-5.-5);
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   .btn{display:block;
+    text-align: center;
+}
+#social-area .network{width: auto;}
+.service-box {padding: 0}
+.single-faq{background: papayawhip}
+.main-content h1{margin-top: 20px}
+.page-title{margin-top: 25px}
+}
+@media(min-width:768px){  /* tablet  768-991 */  
+
+}
+@media(min-width:992px){ /* Desktop/laptop 992-1199 */
+
+}
+@media(min-width:1200px){ /* large screen */
+
+}
